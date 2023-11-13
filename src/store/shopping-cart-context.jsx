@@ -64,7 +64,6 @@ function shoppingCartReducer(state, action) {
         items: updatedItems,
       };
   }
-
   return state;
 }
 
@@ -89,7 +88,7 @@ export default function CartContextProvider({ children }) {
       payload: {
         productId: productId,
         amount: amount,
-      },
+      }
     });
   }
 
